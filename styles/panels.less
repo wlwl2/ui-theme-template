@@ -1,27 +1,64 @@
 
 // Panels
-// -------------------
 
-// Overrides: atom/static/panels.less
+atom-panel {
+  .text(normal);
+  position: relative;
+  border-bottom: 1px solid @base-border-color;
 
-.panel-heading {
-  border-bottom: 1px solid @panel-heading-border-color;
-  background-color: @panel-heading-background-color;
-}
-
-.inset-panel {
-  background-color: @inset-panel-background-color;
-  .panel-heading {
-    background-color: lighten(@inset-panel-background-color, 4%);
+  &.top {
+    border-right: 1px solid @base-border-color;
+  }
+  &.left {
+    border-right: 1px solid @base-border-color;
+  }
+  &.right {
+    border-left: 1px solid @base-border-color;
+  }
+  &.bottom {
+    border-right: 1px solid @base-border-color;
+  }
+  &.footer:last-child {
+    border-bottom: none;
+  }
+  &.tool-panel:empty {
+    border: none;
   }
 }
 
+.panel {
+  &.bordered {
+    border: 1px solid @base-border-color;
+    border-radius: @component-border-radius;
+  }
+}
 
-// Modal -------------------
-// Used on top of the editor, like the Command Palette.
+.inset-panel {
+  position: relative;
+  background-color: @inset-panel-background-color;
+  border-radius: @component-border-radius;
+  &.bordered {
+    border: 1px solid @base-border-color;
+    border-radius: @component-border-radius;
+  }
+  & .panel-heading {
+    border-color: @inset-panel-border-color;
+  }
+}
 
-atom-panel.modal {
-  border: 1px solid @overlay-border-color;
-  border-top: none;
-  box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
+.panel-heading {
+  .text(normal);
+  border-bottom: 1px solid @panel-heading-border-color;
+  background-color: @panel-heading-background-color;
+
+  .btn {
+    padding-left: 8px;
+    padding-right: 8px;
+    .btn-default(
+      lighten(@button-background-color, 10%),
+      lighten(@button-background-color-hover, 10%),
+      lighten(@button-background-color-selected, 10%),
+      lighten(@text-color, 10%)
+    );
+  }
 }

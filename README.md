@@ -1,27 +1,42 @@
-# Atom UI Theme Template
+## One Light UI theme [![Build Status](https://travis-ci.org/atom/one-light-ui.svg?branch=master)](https://travis-ci.org/atom/one-light-ui)
 
-This is a __starter template__ for creating an Atom UI theme.
+A light UI theme that adapts to most syntax themes.
 
-This template only includes the __minimum of styling__ needed and comes with a neutral look. It could already be used as a real theme, but its purpose is to serve as a basis for creating your own theme. It is documented throughout and invites you to make changes to your liking. For some inspiration take a look at other Atom themes at [atom.io/themes](https://atom.io/themes/). Or you're always free to fork a theme that already comes close to your vision.
+![One light UI](https://cloud.githubusercontent.com/assets/378023/26246819/0826f04e-3cd6-11e7-98eb-cd94bc48b090.png)
 
-Happy theming! 🚀
-
-
-## Getting started
-
-1. Fork this repository.
-2. Continue with step 2 from [Creating a UI Theme](http://flight-manual.atom.io/hacking-atom/sections/creating-a-theme/#creating-a-ui-theme)
-
-If you get stuck somewhere, feel free to create an [issue](https://github.com/atom-community/ui-theme-template/issues/new).
-
-ps. Don't forget to delete the above and edit the below in your own `README.md`.
+> The font used in the screenshot is [Fira Mono](https://github.com/mozilla/Fira).
 
 
----
+### Install
+
+This theme comes bundled with Atom and can be activated by going to the __Settings > Themes__ section and selecting "One Light" from the __UI Themes__ drop-down menu.
 
 
-# My UI theme
+### Settings
 
-A short description of your theme.
+In the theme settings you can:
 
-![A screenshot of your theme](https://cloud.githubusercontent.com/assets/378023/8842525/4215f26c-3136-11e5-9d94-d2c078a05d24.png)
+- Change the __Font Size__ to scale the whole UI up or down.
+- Choose between 3 __Tab Sizing__ modes.
+- Hide the  __dock buttons__.
+
+To make changes, go to `Settings > Themes > One Light UI > Settings` or the cog icon next to the theme picker.
+
+
+### Customize
+
+It's also possible to resize only certain areas by adding the following to your `styles.less` (Use DevTools to find the right selectors):
+
+```css
+.theme-one-light-ui {
+  .tab-bar { font-size: 18px; }
+  .tree-view { font-size: 14px; }
+  .status-bar { font-size: 12px; }
+}
+```
+
+
+### FAQ
+
+__Why do the colors change when I switch Syntax themes.__
+This UI theme uses the same background color as the chosen syntax theme. If that syntax theme has a dark background color, it only uses its hue, but otherwise stays light. This lets you use light-dark combos.

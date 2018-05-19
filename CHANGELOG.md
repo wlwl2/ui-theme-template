@@ -1,3 +1,1 @@
-## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+See https://github.com/atom/one-light-ui/releases
