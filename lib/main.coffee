@@ -1,5 +1,5 @@
 root = document.documentElement
-themeName = 'one-light-ui'
+themeName = 'wlwl2-one-light-ui'
 
 
 module.exports =

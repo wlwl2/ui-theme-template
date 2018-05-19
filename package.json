@@ -1,5 +1,5 @@
 {
-  "name": "wlwl2-ui",
+  "name": "wlwl2-one-light-ui",
   "theme": "ui",
   "version": "1.0.0",
   "description": "Atom One light UI theme with bug fix",
@@ -9,7 +9,7 @@
     "ui"
   ],
   "license": "MIT",
-  "repository": "https://github.com/atom/one-light-ui",
+  "repository": "https://github.com/atom/wlwl2-one-light-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"

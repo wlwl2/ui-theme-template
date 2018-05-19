@@ -1,1 +1,1 @@
-See https://github.com/atom/one-light-ui/releases
+See https://github.com/atom/wlwl2-one-light-ui/releases

@@ -1,4 +1,4 @@
-themeName = 'one-light-ui'
+themeName = 'wlwl2-one-light-ui'
 
 describe "#{themeName} theme", ->
   beforeEach ->
