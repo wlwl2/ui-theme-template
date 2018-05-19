@@ -9,7 +9,7 @@
     "ui"
   ],
   "license": "MIT",
-  "repository": "https://github.com/atom/wlwl2-one-light-ui",
+  "repository": "https://github.com/wlwl2/wlwl2-one-light-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"
