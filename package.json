@@ -1,8 +1,8 @@
 {
   "name": "wlwl2-one-light-ui",
   "theme": "ui",
-  "version": "1.12.3",
-  "description": "Atom One light UI theme",
+  "version": "1.0.0",
+  "description": "Atom One light UI theme with bug fix",
   "keywords": [
     "light",
     "adaptive",
